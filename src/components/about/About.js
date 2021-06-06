@@ -1,12 +1,12 @@
 import React, { useState, useEffect, Fragment } from 'react';
-import Axios from 'axios';
+import axios from 'axios';
 import './About.css';
 
 const About = () => {
 
     const [information, setInformation] = useState({});
     useEffect(() =>{
-        Axios.get('https://ascadias.herokuapp.com/about')
+        axios.get('https://ascadias.herokuapp.com/about')
         .then(
             res => setInformation(res.data[0])
         )
