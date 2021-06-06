@@ -18,7 +18,7 @@ const About = () => {
                 <img
                 className='about__img-img'
                 src={information.photo}
-                alt='img    '
+                alt='profile photo'
                 ></img>
            </Fragment>
            <Fragment className='about__desc'>
