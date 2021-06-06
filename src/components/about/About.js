@@ -1,38 +1,35 @@
-import React, { useState, useEffect, Fragment } from 'react';
-import axios from 'axios';
+import React from 'react';
 import './About.css';
+import Grid from '@material-ui/core/Grid';
+import Button from '@material-ui/core/Button';
 
 const About = () => {
-
-    const [information, setInformation] = useState({});
-    useEffect(() =>{
-        axios.get('https://ascadias.herokuapp.com/about')
-        .then(
-            res => setInformation(res.data[0])
-        )
-    }, [setInformation]);
-
     return (
-        <Fragment className='about'>
-           <Fragment className='about__img'>
+        <div className="about">
+            <div className="about__desc">
+                <h3>Déjame Hablarte Sobre Mi</h3>
+                <p>Soy un Desarrollador Web FullStack Junior, Especializado en Javascript</p>
+                <Grid container>
+                    <Grid item>                
+                        <Button
+                            className="cv-button"
+                            variant="contained"
+                            color="Primary"
+                            onClick={() => { alert('Descargar') }}
+                        >
+                            Descarga mi CV
+                        </Button>
+                    </Grid>
+                </Grid>
+            </div>
+            <div className="about__img">
                 <img
-                className='about__img-img'
-                src={information.photo}
-                alt='profile photo'
-                ></img>
-           </Fragment>
-           <Fragment className='about__desc'>
-               <h1>{information.name}</h1>
-               <h2>{information.profession}</h2>
-               <p>{information.about_me}</p>
-               <ul className='skills'>
-                   {information.skills && information.skills.map((skill, index) =>
-                       <li className='skills__li'>{skill}</li>
-                   )}
-               </ul>
-           </Fragment>
-        </Fragment>
-    );
+                    src="https://cdn.pixabay.com/photo/2017/08/10/08/47/laptop-2620118_960_720.jpg"
+                    alt="about"
+                    />
+            </div>
+        </div>
+    )
 }
 
-export default About;
+export default About
