@@ -8,8 +8,31 @@ const About = () => {
         <div className="about">
             <div className="about__desc">
                 <h3>Déjame Hablarte Sobre Mi</h3>
-                <p>Soy un Desarrollador Web FullStack Junior, Especializado en Javascript</p>
-                <Grid container>
+                <p>Hola, mi nombre es <b>Marcelo Fernandez</b>, tengo 21 años.
+                Soy estudiante autodidacta en <b>Desarrollo Web Full Stack</b>,
+                 me considero una persona creativa y proactiva, adoro aprender nuevas tecnologías,
+                  superarme a mi mismo y mejorar mis proyectos en base a las cosas que vaya aprendiendo en mi camino:)</p>
+
+                <h3>Mis Habilidades</h3>
+                    <ul>
+                        <li>• HTML5</li>
+                        <li>• NextJS</li>
+                        <li>• Firebase</li>
+                        <li>• CSS3</li>
+                        <li>• NodeJS</li>
+                        <li>• UI / UX</li>
+                        <li>• JavaScript</li>
+                        <li>• Express</li>
+                        <li>• Git / GitHub</li>
+                        <li>• React</li>
+                        <li>• MySQL</li>
+                        <li>• VS Code</li>
+                        <li>• Redux</li>
+                        <li>• MongoDB</li>
+                        <li>• Photoshop</li>
+                    </ul>
+                    
+                <div container className="button-container">
                     <Grid item>                
                         <Button
                             className="cv-button"
@@ -20,7 +43,8 @@ const About = () => {
                             Descarga mi CV
                         </Button>
                     </Grid>
-                </Grid>
+                    
+                </div>
             </div>
             <div className="about__img">
                 <img

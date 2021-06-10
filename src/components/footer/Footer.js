@@ -19,7 +19,7 @@ const Footer = () => {
             </div>
             <div className="footer-sns">
                 <div className="design-by">
-                    Aplicación web diseñada por Marcelo Fernandez
+                    Aplicación web diseñada por Marcelo Fernandez @2021
                 </div>
                 <div className="sns-links">
                     <a href="https://www.linkedin.com/in/jmarce99/" target="_blank" rel="noreferrer">
