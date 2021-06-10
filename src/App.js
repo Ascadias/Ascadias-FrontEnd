@@ -1,5 +1,4 @@
 import React from 'react';
-import './assets/css/App.css';
 
 //  Importar componentes
 import Navbar from './components/navbar/Navbar';
