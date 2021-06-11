@@ -5,7 +5,7 @@ import './Logo.css';
 const Logo = () => {
     return (
         <React.Fragment>
-        <div>
+        <div className="photo">
             <img src={logo} alt="Logo de Ascadias" title="Ascadias"></img>
         </div>
         </React.Fragment>
