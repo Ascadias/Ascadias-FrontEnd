@@ -25,14 +25,14 @@ const Footer = () => {
                     <a href="https://www.linkedin.com/in/jmarce99/" target="_blank" rel="noreferrer">
                         <img src={Linkedin} height="18" alt="Linkedin icon"></img>
                     </a>
-                    <a href="https://twitter.com/j_marce99" target="_blank" rel="noreferrer">
+                    <a href="https://twitter.com/jmarce99" target="_blank" rel="noreferrer">
                         <img src={Twitter} height="18" alt="Twitter icon"></img>
                     </a>
-                    <a href="https://www.facebook.com/j.marce99/" target="_blank" rel="noreferrer">
+                    <a href="https://www.facebook.com/jmarce99/" target="_blank" rel="noreferrer">
 
                         <img src={Facebook} height="18" alt="Facebook icon"></img>
                     </a>
-                    <a href="https://github.com/Ascadias" tarket="_blank" rel="noreferrer">
+                    <a href="https://github.com/jmarce99" tarket="_blank" rel="noreferrer">
                         <img src={Github} height="20" alt="GitHub mark"></img>
                     </a>
                     <a href="" target="_blank" rel="noreferrer">

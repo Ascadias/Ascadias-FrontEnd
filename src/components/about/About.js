@@ -13,7 +13,7 @@ const About = () => {
                  me considero una persona creativa y proactiva, adoro aprender nuevas tecnologías,
                   superarme a mi mismo y mejorar mis proyectos en base a las cosas que vaya aprendiendo en mi camino:)</p>
 
-                <h3>Mis Habilidades</h3>
+                <h3>Conocimientos</h3>
                     <ul>
                         <li>• HTML5</li>
                         <li>• NextJS</li>
