@@ -35,7 +35,7 @@ const Footer = () => {
                     <a href="https://github.com/jmarce99" tarket="_blank" rel="noreferrer">
                         <img src={Github} height="20" alt="GitHub mark"></img>
                     </a>
-                    <a href="" target="_blank" rel="noreferrer">
+                    <a href="https://www.youtube.com/channel/UCFs46VgslEUeGd1BGZTFwXg" target="_blank" rel="noreferrer">
                         <img src={Youtube} height="16" alt="YouTube icon"></img>
                     </a>
 

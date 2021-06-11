@@ -2,6 +2,8 @@ import React from 'react';
 import './About.css';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
+//import CVMP4 from './../../assets/media/cv.mp4';
+import CVPDF from './../../assets/media/cv.pdf';
 
 const About = () => {
     return (
@@ -11,7 +13,7 @@ const About = () => {
                 <p>Hola, mi nombre es <b>Marcelo Fernandez</b>, tengo 21 años.
                 Soy estudiante autodidacta en <b>Desarrollo Web Full Stack</b>,
                  me considero una persona creativa y proactiva, adoro aprender nuevas tecnologías,
-                  superarme a mi mismo y mejorar mis proyectos en base a las cosas que vaya aprendiendo en mi camino:)</p>
+                 superarme a mi mismo y mejorar mis proyectos en base a lo que vaya aprendiendo en mi camino.</p>
 
                 <h3>Conocimientos</h3>
                     <ul>
@@ -38,9 +40,14 @@ const About = () => {
                             className="cv-button"
                             variant="contained"
                             color="Primary"
-                            onClick={() => { alert('Descargar') }}
                         >
-                            Descarga mi CV
+                            <a
+                            href={CVPDF}
+                            target="_blank"
+                            rel="noreferrer"
+                            >
+                                Mostrar CV
+                            </a>
                         </Button>
                     </Grid>
                     

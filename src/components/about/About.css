@@ -53,6 +53,11 @@
     margin: 0 auto;
 }
 
+a{
+    text-decoration: none;
+    color: #F6F4F1;
+}
+
 @media only screen and (max-width: 960px){
     .about{
         flex-direction: column;
