@@ -8,7 +8,7 @@ const cover = () => {
         <div className="cover-container">
             <video className="video" src={coverVideo} autoPlay loop muted />
             <Logo/>
-            <h1>Julio Fernandez</h1>
+            <h1>Marcelo Fernandez</h1>
             <p>Desarrollador Full Stack en JavaScript</p>
         </div>
     )
