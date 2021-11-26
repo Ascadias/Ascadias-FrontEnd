@@ -1,17 +1,24 @@
-import React from 'react';
-import './Cover.css';
-import coverVideo from '../../assets/media/coverVideo.mp4';
-import Logo from '../logo/Logo';
+import React from "react";
+import Logo from "../logo/Logo";
+
+import { Flex, Text, Heading } from "@chakra-ui/react";
 
 const cover = () => {
-    return (
-        <div className="cover-container">
-            <video className="video" src={coverVideo} autoPlay loop muted />
-            <Logo/>
-            <h1>Marcelo Fernandez</h1>
-            <p>Desarrollador Full Stack en JavaScript</p>
-        </div>
-    )
-}
+  return (
+    <Flex
+      className="cover-container"
+      height="100vh"
+      direction="column"
+      justifyContent="center"
+      alignItems="center"
+    >
+      <Logo id={1} />
+      <Flex direction="column" p={2} align="center">
+        <Heading mb={2} fontSize={{base: "xl", md: "4xl"}}>Julio Fernandez</Heading>
+        <Text fontSize={{base: "xl", md: "4xl"}}>Desarrollador Full Stack en JavaScript</Text>
+      </Flex>
+    </Flex>
+  );
+};
 
-export default cover
+export default cover;

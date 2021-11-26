@@ -1,18 +1,37 @@
 .info-container {
     width: 100%;
     height: 300px;
-    background-color: #F6F4F1;
-    color: black;
+    background: var(--prueba-radial-rara);
+    color: var(--light);
     margin-bottom: 100vh;
+    object-fit: contain;
+    box-shadow: inset 0 0 0 1000px rgb(0, 0, 0 ,0.4);
+    animation: BackgroundAnimation 70s ease infinite;
 }
 
 .info{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
+    padding: 0 15%;
 }
 
+.info > h1{
+    font-size: 2.5rem;
+    color: var(--light);
+}
+.info > h2{
+    font-size: 1.8rem;
+    margin-top: 3%;
+    color: var(--light);
+    text-align: center;
+}
+
+.info_a{
+    color: var(--info);
+}
 @media only screen and (max-width: 960px){
     .info-container{
         height: 200px;

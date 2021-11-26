@@ -1,24 +1,21 @@
 import React from 'react';
-import './assets/css/App.css';
+import './App.css';
 
-//  Importar componentes
-import Navbar from './components/navbar/Navbar';
-import Cover from './components/cover/Cover';
-import About from './components/about/About';
-import Slider from './components/slider/Slider';
-import Info from './components/info/Info';
-import Footer from './components/footer/Footer';
+//Importación de dependencias
+import { Routes, Route } from "react-router-dom";
+
+//Importación de componentes
+import Home from "./components/Home/Home.js";
+import Auth from './components/Auth/Auth';
 
 function App() {
 
   return (
     <div className="App">
-      <Navbar />
-      <Cover />
-      <About />
-      <Slider />
-      <Info />
-      <Footer />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/auth" element={<Auth />} />
+      </Routes>
     </div>
   );
 }

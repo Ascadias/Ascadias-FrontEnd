@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer-info">
-                <h1>Marcelo Fernandez</h1>
+                <h1>Julio Fernandez</h1>
                 <p>Buenos Aires, Argentina.</p>
             </div>
             <div className="footer-contact">

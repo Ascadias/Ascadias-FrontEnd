@@ -1,7 +1,35 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #bfc7d8;
+  --secondary-color: #ffde59;
+  --terceary-color: #edb888;
+  --others-color: #87929b;
+  --prueba-color1: #FF9F1C;
+  --prueba-color2: #FFBF69;
+  --prueba-color3: #FFFFFF;
+  --prueba-color4: #CBF3F0;
+  --prueba-color5: #2EC4B6;
+  --prueba-radial-color01: -webkit-radial-gradient(center,#FFBF69, #2EC4B6);
+  --prueba-radial-color02: -webkit-radial-gradient(bottom, #222C30, #000000);
+  --gradient-primary-bottom: linear-gradient(to bottom, #10305810, #0a0011 100%);
+  --gradient-primary-top: linear-gradient(to top, #10305810, #0a0011 100%);
+  --error-color:#87929b;
+  --background-radial-color: -webkit-radial-gradient(#10305810, #0a0011);
+  --background-radial-color-secondary: -webkit-radial-gradient(#10305810, #0a001190);
+  --background-radial-hover-color: -webkit-radial-gradient(#45581040, #0a001110);
+  --input-border-color: #87929b40;
+}
 .footer{
     width: 100%;
     height: 100vh;
-    background-color: #222C30;
+    background: var(--prueba-radial-color02);
+    object-fit: contain;
+    box-shadow: inset 0 0 0 1000px rgb(0, 0, 0 ,0.2);
     color: white;
     padding-top: 180px;
     position: fixed;

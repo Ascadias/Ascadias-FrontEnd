@@ -1,37 +1,35 @@
 import React from "react";
 import "./About.css";
-import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
-//import CVMP4 from './../../assets/media/cv.mp4';
 import CVPDF from "./../../assets/media/cv.pdf";
+import styles from "../modules/About.module.css";
 
 const About = () => {
   return (
-    <div className="about">
-      <div className="about__desc">
-        <h3>Déjame Hablarte Sobre Mi</h3>
-        <p>
-          Hola, tengo 22 años y soy estudiante en{" "}
-          <b>Desarrollo Web Full Stack</b>, me considero una persona creativa y
-          proactiva, adoro aprender nuevas tecnologías, superarme a mi mismo y
-          mejorar mis proyectos en base a lo que vaya aprendiendo en mi camino.
+    <div className={styles.about_container}>
+      <div className={styles.about}>
+        <h3 className={styles.about_h3}>Sobre Mi</h3>
+        <p className={styles.about_p}>
+          Soy una persona Creativa y Proactiva que le encanta el mundo de la
+          tecnología, enfrentarse a nuevos desafíos y mejorarse a si mismo cada
+          día. <br />
+          Detallista, Perfeccionista y Autodidacta por naturaleza lo cual me
+          llevo a incursionar en el sector de la Programación, el Diseño y la
+          Creación de contenido, convirtiéndome en un apasionado Full Stack
+          Developer
         </p>
-
-        <div container className="button-container">
-          <Grid item>
-            <Button className="cv-button" variant="contained" color="Primary">
-              <a href={CVPDF} target="_blank" rel="noreferrer">
-                Mostrar CV
-              </a>
-            </Button>
-          </Grid>
+        <div className={styles.about_button_container}>
+          <Button className={styles.about_cv_button} variant="contained">
+            <a
+              href={CVPDF}
+              target="_blank"
+              rel="noreferrer"
+              className={styles.about_cv_button_a}
+            >
+              Mostrar CV
+            </a>
+          </Button>
         </div>
-      </div>
-      <div className="about__img">
-        <img
-          src="https://cdn.pixabay.com/photo/2017/08/10/08/47/laptop-2620118_960_720.jpg"
-          alt="about"
-        />
       </div>
     </div>
   );
