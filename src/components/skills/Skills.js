@@ -1,17 +1,267 @@
 import React from "react";
-import styles from "../modules/Skills.module.css";
+import {
+  SiJavascript,
+  SiReact,
+  SiRedux,
+  SiNodedotjs,
+  SiExpress,
+  SiPostgresql,
+  SiSequelize,
+  SiHtml5,
+  SiSass,
+  SiCss3,
+} from "react-icons/si";
+import {
+  Flex,
+  Text,
+  Box,
+  Heading,
+  Tabs,
+  Tab,
+  TabList,
+  TabPanels,
+  TabPanel,
+  Icon,
+} from "@chakra-ui/react";
 
 const Skills = () => {
   return (
-    <div className={styles.skills_container}>
-      <div className={styles.skills}>
-        <h2 className={styles.skills_h2}>Habilidades</h2>
-        <div className={styles.skills_technology}>
-          <h3 className={styles.skills_h3}>Técnicas</h3>
-          <h3 className={styles.skills_h3}>Blandas</h3>
-        </div>
-      </div>
-    </div>
+    <Flex
+      p="0"
+      m="0"
+      height="2xl"
+      justifyContent="center"
+      alignItems="center"
+      lineHeight="1.5"
+      direction="column"
+    >
+      <Flex p={{ base: "5vh", md: "40vh" }} width="100%" direction="column">
+        <Heading
+          color="var(--cyan)"
+          fontSize={{ base: "3xl", md: "5xl" }}
+          letterSpacing={{ base: "4px", md: "4px" }}
+          textAlign="center"
+          height="10%"
+          mt={{ base: "4", md: "10" }}
+          mb={{ base: "4", md: "14" }}
+        >
+          Habilidades
+        </Heading>
+        <Tabs isFitted variant="enclosed">
+          <TabList mb="0">
+            <Tab p="0.4375rem 0.875rem" mb="-1px">
+              <Text
+                mt="7px"
+                mb="3.500px"
+                fontWeight="400"
+                fontSize={{ base: "17.5px", md: "2xl" }}
+              >
+                Técnicas
+              </Text>
+            </Tab>
+            <Tab p="0.4375rem 0.875rem" mb="-1px">
+              <Text
+                mt="7px"
+                mb="3.500px"
+                fontWeight="400"
+                fontSize={{ base: "17.5px", md: "2xl" }}
+              >
+                Blandas
+              </Text>
+            </Tab>
+          </TabList>
+          <TabPanels>
+            <TabPanel>
+              <Flex
+                direction={{ base: "column", md: "row" }}
+                pt={3}
+                ml="-15"
+                mr="-15"
+                pl="3.500px"
+                pr="3.500px"
+                margin="0 -15"
+              >
+                <Box p="0 15px" width={{ base: "100%" }}>
+                  <Text
+                    mt="7px"
+                    mb="3.500px"
+                    fontWeight="300"
+                    fontSize={{ base: "17.5px", md: "2xl" }}
+                  >
+                    JavaScript
+                    <Icon position="absolute" mt="2" ml="2" as={SiJavascript} />
+                  </Text>
+                  <Text
+                    mt="7px"
+                    mb="3.500px"
+                    fontWeight="300"
+                    fontSize={{ base: "17.5px", md: "2xl" }}
+                  >
+                    React
+                    <Icon position="absolute" mt="2" ml="2" as={SiReact} />
+                  </Text>
+
+                  <Text
+                    mt="7px"
+                    mb="3.500px"
+                    fontWeight="300"
+                    fontSize={{ base: "17.5px", md: "2xl" }}
+                  >
+                    Redux
+                    <Icon position="absolute" mt="2" ml="2" as={SiRedux} />
+                  </Text>
+                  <Text
+                    mt="7px"
+                    mb="3.500px"
+                    fontWeight="300"
+                    fontSize={{ base: "17.5px", md: "2xl" }}
+                  >
+                    Node
+                    <Icon position="absolute" mt="2" ml="2" as={SiNodedotjs} />
+                  </Text>
+                  <Text
+                    mt="7px"
+                    mb="3.500px"
+                    fontWeight="300"
+                    fontSize={{ base: "17.5px", md: "2xl" }}
+                  >
+                    Express
+                    <Icon position="absolute" mt="2" ml="2" as={SiExpress} />
+                  </Text>
+                </Box>
+                <Box p="0 15px" width={{ base: "100%", md: "50%" }}>
+                  <Text
+                    mt="7px"
+                    mb="3.500px"
+                    fontWeight="300"
+                    fontSize={{ base: "17.5px", md: "2xl" }}
+                  >
+                    PostgreSQL
+                    <Icon position="absolute" mt="2" ml="2" as={SiPostgresql} />
+                  </Text>
+                  <Text
+                    mt="7px"
+                    mb="3.500px"
+                    fontWeight="300"
+                    fontSize={{ base: "17.5px", md: "2xl" }}
+                  >
+                    Sequelize
+                    <Icon position="absolute" mt="2" ml="2" as={SiSequelize} />
+                  </Text>
+                  <Text
+                    mt="7px"
+                    mb="3.500px"
+                    fontWeight="300"
+                    fontSize={{ base: "17.5px", md: "2xl" }}
+                  >
+                    HTML
+                    <Icon position="absolute" mt="2" ml="2" as={SiHtml5} />
+                  </Text>
+                  <Text
+                    mt="7px"
+                    mb="3.500px"
+                    fontWeight="300"
+                    fontSize={{ base: "17.5px", md: "2xl" }}
+                  >
+                    Sass
+                    <Icon position="absolute" mt="2" ml="2" as={SiSass} />
+                  </Text>
+                  <Text
+                    mt="7px"
+                    mb="3.500px"
+                    fontWeight="300"
+                    fontSize={{ base: "17.5px", md: "2xl" }}
+                  >
+                    CSS
+                    <Icon position="absolute" mt="2" ml="2" as={SiCss3} />
+                  </Text>
+                </Box>
+              </Flex>
+            </TabPanel>
+            <TabPanel>
+              <Flex
+                direction={{ base: "column", md: "row" }}
+                pt={3}
+                ml="-15"
+                mr="-15"
+                pl="3.500px"
+                pr="3.500px"
+                margin="0 -15"
+              >
+                <Box p="0 15px" width={{ base: "100%", md: "50%" }}>
+                  <Text
+                    mt="7px"
+                    mb="3.500px"
+                    fontWeight="300"
+                    fontSize={{ base: "17.5px", md: "2xl" }}
+                  >
+                    Creativity
+                  </Text>
+                  <Text
+                    mt="7px"
+                    mb="3.500px"
+                    fontWeight="300"
+                    fontSize={{ base: "17.5px", md: "2xl" }}
+                  >
+                    Autonomy
+                  </Text>
+                  <Text
+                    mt="7px"
+                    mb="3.500px"
+                    fontWeight="300"
+                    fontSize={{ base: "17.5px", md: "2xl" }}
+                  >
+                    Quick learning
+                  </Text>
+                  <Text
+                    mt="7px"
+                    mb="3.500px"
+                    fontWeight="300"
+                    fontSize={{ base: "17.5px", md: "2xl" }}
+                  >
+                    Adaptability
+                  </Text>
+                </Box>
+                <Box p="0 15px" width={{ base: "100%", md: "50%" }}>
+                  <Text
+                    mt="7px"
+                    mb="3.500px"
+                    fontWeight="300"
+                    fontSize={{ base: "17.5px", md: "2xl" }}
+                  >
+                    Problem solving
+                  </Text>
+                  <Text
+                    mt="7px"
+                    mb="3.500px"
+                    fontWeight="300"
+                    fontSize={{ base: "17.5px", md: "2xl" }}
+                  >
+                    Teamwork
+                  </Text>
+                  <Text
+                    mt="7px"
+                    mb="3.500px"
+                    fontWeight="300"
+                    fontSize={{ base: "17.5px", md: "2xl" }}
+                  >
+                    Organization
+                  </Text>
+                  <Text
+                    mt="7px"
+                    mb="3.500px"
+                    fontWeight="300"
+                    fontSize={{ base: "17.5px", md: "2xl" }}
+                  >
+                    Agile mindset
+                  </Text>
+                </Box>
+              </Flex>
+            </TabPanel>
+          </TabPanels>
+        </Tabs>
+      </Flex>
+    </Flex>
   );
 };
 

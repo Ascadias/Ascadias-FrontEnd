@@ -14,8 +14,18 @@ const cover = () => {
     >
       <Logo id={1} />
       <Flex direction="column" p={2} align="center">
-        <Heading mb={2} fontSize={{base: "xl", md: "4xl"}}>Julio Fernandez</Heading>
-        <Text fontSize={{base: "xl", md: "4xl"}}>Desarrollador Full Stack en JavaScript</Text>
+        <Heading
+          mb={2}
+          fontSize={{ base: "3xl", md: "7xl" }}
+          fontFamily="Roboto Mono"
+          color="var(--lightcyan)"
+          letterSpacing={{base:"3.5px", md:"4px"}}
+        >
+          Julio Fernandez
+        </Heading>
+        <Text fontSize={{ base: "17.5px", md: "2xl" }} fontFamily="Roboto Mono" letterSpacing={{base:"1.5px", md:"3px"}} textAlign="center" mt={{base:"1", md:"1"}}>
+          Desarrollador Full Stack en JavaScript
+        </Text>
       </Flex>
     </Flex>
   );

@@ -1,8 +1,7 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 
 import { MdModeNight, MdLightMode } from "react-icons/md";
-import { TiArrowDownThick } from "react-icons/ti";
+import { TiArrowUpThick } from "react-icons/ti";
 
 
 import {
@@ -10,13 +9,11 @@ import {
   Button,
   useColorMode,
   useColorModeValue,
-  Text,
 } from "@chakra-ui/react";
 
 const NavBar = ({ isScrolling }) => {
   const { toggleColorMode } = useColorMode();
   const formBackground = useColorModeValue("gray.100, gray.700");
-  const navigate = useNavigate();
   let colorModeInfo = useColorMode();
   const toTheTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -35,6 +32,7 @@ const NavBar = ({ isScrolling }) => {
         rounded={6}
         justifyContent="space-between"
         alignItems="center"
+        position="fixed" top= "1px" left= "0" right="0" z-index="1030"
       >
         <Button
           onClick={toTheTop}
@@ -44,7 +42,7 @@ const NavBar = ({ isScrolling }) => {
           ml={0}
           mr={0}
         >
-          <TiArrowDownThick />
+          <TiArrowUpThick />
         </Button>
         <Button
           onClick={(e) => changeColorMode(e)}
