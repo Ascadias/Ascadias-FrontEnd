@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Heading, Box, Code , Icon } from "@chakra-ui/react";
+import { Flex, Heading, Box, Code, Icon } from "@chakra-ui/react";
 import {
   SiLinkedin,
   SiGithub,
@@ -12,8 +12,20 @@ import { FaCode } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="footer">
-      <Flex height={{ base: "40vh", md: "33vh" }} direction="column" p={{base:"5", md:"14"}} pt={{base:"20", md:"20" }} boxShadow="inset 0 0 0 1000px rgb(0, 0, 0, 0.1)">
-        <Flex justifyContent="space-around" alignItems="center" pl={{base:"2", md:"14"}} pr={{base:"2", md:"14"}} pb={{base:"10", md:"10" }}>
+      <Flex
+        height={{ base: "40vh", md: "33vh" }}
+        direction="column"
+        p={{ base: "5", md: "14" }}
+        pt={{ base: "20", md: "20" }}
+        boxShadow="inset 0 0 0 1000px rgb(0, 0, 0, 0.1)"
+      >
+        <Flex
+          justifyContent="space-around"
+          alignItems="center"
+          pl={{ base: "2", md: "14" }}
+          pr={{ base: "2", md: "14" }}
+          pb={{ base: "10", md: "10" }}
+        >
           <Box>
             <a
               href="https://www.linkedin.com/in/jmarce99/"
@@ -42,14 +54,22 @@ const Footer = () => {
             </a>
           </Box>
         </Flex>
-        <Flex justifyContent="center" alignItems="center" p={{base:"0", md:"6"}}>
+        <Flex
+          justifyContent="center"
+          alignItems="center"
+          p={{ base: "0", md: "6" }}
+        >
           <Icon as={FaCode} h={5} w={5} mr={1.5} />
           <Heading
             fontSize={{ base: "md", md: "xl" }}
             textAlign="center"
             mb={1}
           >
-            By <Code fontSize={{ base: "md", md: "xl" }} colorScheme="purple">Julio Fernandez</Code> using
+            By{" "}
+            <Code fontSize={{ base: "md", md: "xl" }} colorScheme="purple">
+              Julio Fernandez
+            </Code>{" "}
+            using
           </Heading>
           <Icon as={SiReact} h={5} w={5} ml={1.5} mr={1.5} />
           <Heading

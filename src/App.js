@@ -1,21 +1,33 @@
-import React from 'react';
-import './App.css';
-
-//Importación de dependencias
-import { Routes, Route } from "react-router-dom";
+import React from "react";
+import "./App.css";
 
 //Importación de componentes
-import Home from "./components/Home/Home.js";
-import Auth from './components/Auth/Auth';
+import Navbar from "./components/Navbar";
+import Cover from "./components/Cover";
+import About from "./components/About";
+import Slider from "./components/Slider";
+import Info from "./components/Info";
+import Skills from "./components/Skills";
+import Footer from "./components/Footer";
+
+//Importación de dependencias
+import { Divider } from "@chakra-ui/react";
 
 function App() {
-
   return (
     <div className="App">
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/auth" element={<Auth />} />
-      </Routes>
+      <Navbar />
+      <Cover />
+      <Divider border="4px solid" width={{ base: "97.8%", md: "99.4%" }} />
+      <About />
+      <Divider border="4px solid" width={{ base: "97.8%", md: "99.4%" }} />
+      <Slider />
+      <Divider border="4px solid" width={{ base: "97.8%", md: "99.4%" }} />
+      <Skills />
+      <Divider border="4px solid" width={{ base: "97.8%", md: "99.4%" }} />
+      <Info />
+      <Divider border="4px solid" width={{ base: "97.8%", md: "99.4%" }} />
+      <Footer />
     </div>
   );
 }

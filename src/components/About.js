@@ -1,5 +1,5 @@
 import React from "react";
-//import CVPDF from "./../../assets/media/cv.pdf";
+import CVPDF from "./../assets/media/cv.pdf";
 import { Flex, Text, Heading, Button, Icon } from "@chakra-ui/react";
 import { BiShowAlt } from "react-icons/bi";
 
@@ -33,23 +33,24 @@ const About = () => {
           Creación de contenido, convirtiéndome en un apasionado Full Stack
           Developer
         </Text>
-
-        <Button
-          bg="var(--cyan)"
-          fontSize="17.5px" 
-          width="30vh"
-          height="10vh"
-          mt={{ base: "5", md: "14" }}
-          _hover={{
-            width: "33vh",
-            transition: "all 0.5s ease-in-out",
-            background: "var(--primary)",
-            opacity: "0.9",
-          }}
-        >
-          Mostrar CV
-          <Icon ml="2" as={BiShowAlt} w={8} h={8} />
-        </Button>
+        <a href={CVPDF} target="_blank">
+          <Button
+            bg="var(--cyan)"
+            fontSize="17.5px"
+            width="30vh"
+            height="10vh"
+            mt={{ base: "5", md: "14" }}
+            _hover={{
+              width: "33vh",
+              transition: "all 0.5s ease-in-out",
+              background: "var(--primary)",
+              opacity: "0.9",
+            }}
+          >
+            Mostrar CV
+            <Icon ml="2" as={BiShowAlt} w={8} h={8} />
+          </Button>
+        </a>
       </Flex>
     </Flex>
   );

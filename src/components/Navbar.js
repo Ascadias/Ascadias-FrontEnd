@@ -3,7 +3,6 @@ import React from "react";
 import { MdModeNight, MdLightMode } from "react-icons/md";
 import { TiArrowUpThick } from "react-icons/ti";
 
-
 import {
   Flex,
   Button,
@@ -24,7 +23,7 @@ const NavBar = ({ isScrolling }) => {
     toggleColorMode();
   };
   return (
-    <nav style={{position: "absolute", width: "100%"}}>
+    <nav style={{ position: "absolute", width: "100%" }}>
       <Flex
         height="2vh"
         background={formBackground}
@@ -32,7 +31,11 @@ const NavBar = ({ isScrolling }) => {
         rounded={6}
         justifyContent="space-between"
         alignItems="center"
-        position="fixed" top= "1px" left= "0" right="0" z-index="1030"
+        position="fixed"
+        top="1px"
+        left="0"
+        right="0"
+        z-index="1030"
       >
         <Button
           onClick={toTheTop}

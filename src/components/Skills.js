@@ -195,7 +195,7 @@ const Skills = () => {
                     fontWeight="300"
                     fontSize={{ base: "17.5px", md: "2xl" }}
                   >
-                    Creativity
+                    Creatividad
                   </Text>
                   <Text
                     mt="7px"
@@ -203,7 +203,7 @@ const Skills = () => {
                     fontWeight="300"
                     fontSize={{ base: "17.5px", md: "2xl" }}
                   >
-                    Autonomy
+                    Autonomía
                   </Text>
                   <Text
                     mt="7px"
@@ -211,7 +211,7 @@ const Skills = () => {
                     fontWeight="300"
                     fontSize={{ base: "17.5px", md: "2xl" }}
                   >
-                    Quick learning
+                    Aprendizaje rápido
                   </Text>
                   <Text
                     mt="7px"
@@ -219,7 +219,7 @@ const Skills = () => {
                     fontWeight="300"
                     fontSize={{ base: "17.5px", md: "2xl" }}
                   >
-                    Adaptability
+                    Adaptabilidad
                   </Text>
                 </Box>
                 <Box p="0 15px" width={{ base: "100%", md: "50%" }}>
@@ -229,7 +229,7 @@ const Skills = () => {
                     fontWeight="300"
                     fontSize={{ base: "17.5px", md: "2xl" }}
                   >
-                    Problem solving
+                    Resolución de problemas
                   </Text>
                   <Text
                     mt="7px"
@@ -237,7 +237,7 @@ const Skills = () => {
                     fontWeight="300"
                     fontSize={{ base: "17.5px", md: "2xl" }}
                   >
-                    Teamwork
+                    Trabajo en equipo
                   </Text>
                   <Text
                     mt="7px"
@@ -245,7 +245,7 @@ const Skills = () => {
                     fontWeight="300"
                     fontSize={{ base: "17.5px", md: "2xl" }}
                   >
-                    Organization
+                    Organización
                   </Text>
                   <Text
                     mt="7px"
@@ -253,7 +253,7 @@ const Skills = () => {
                     fontWeight="300"
                     fontSize={{ base: "17.5px", md: "2xl" }}
                   >
-                    Agile mindset
+                    Mentalidad ágil
                   </Text>
                 </Box>
               </Flex>
